@@ -1,0 +1,38 @@
+[
+  {
+    "promo_id": "p_001",
+    "store_id": "s_001",
+    "title": "10% off Hot Cocoa",
+    "description": "Get 10% off on any Hot Cocoa drink",
+    "discount_percent": 10,
+    "applicable_items": ["Hot Cocoa"],
+    "valid_until": "2025-12-31"
+  },
+  {
+    "promo_id": "p_002",
+    "store_id": "s_001",
+    "title": "Buy 1 Get 1 Pastries",
+    "description": "Buy one pastry, get another free",
+    "discount_percent": 50,
+    "applicable_items": ["Croissant", "Muffin", "Danish"],
+    "valid_until": "2025-12-31"
+  },
+  {
+    "promo_id": "p_003",
+    "store_id": "s_002",
+    "title": "Happy Hour Frappuccino",
+    "description": "50% off Frappuccinos from 3-5 PM",
+    "discount_percent": 50,
+    "applicable_items": ["Frappuccino"],
+    "valid_until": "2025-12-31"
+  },
+  {
+    "promo_id": "p_004",
+    "store_id": "s_003",
+    "title": "Free Boost Upgrade",
+    "description": "Free protein or vitamin boost with any smoothie",
+    "discount_percent": 0,
+    "applicable_items": ["Berry Smoothie", "Green Detox"],
+    "valid_until": "2025-12-31"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "store_id": "s_001",
+    "name": "Starbucks Downtown",
+    "type": "coffee_shop",
+    "location": {"lat": 40.7128, "lng": -74.0060},
+    "hours": {"open": "06:00", "close": "22:00"},
+    "popular_items": ["Hot Cocoa", "Pumpkin Spice Latte", "Caramel Macchiato"]
+  },
+  {
+    "store_id": "s_002",
+    "name": "Starbucks Mall",
+    "type": "coffee_shop",
+    "location": {"lat": 40.7580, "lng": -73.9855},
+    "hours": {"open": "07:00", "close": "21:00"},
+    "popular_items": ["Frappuccino", "Hot Cocoa", "Chai Latte"]
+  },
+  {
+    "store_id": "s_003",
+    "name": "Jamba Juice Central",
+    "type": "juice_bar",
+    "location": {"lat": 40.7484, "lng": -73.9857},
+    "hours": {"open": "08:00", "close": "20:00"},
+    "popular_items": ["Berry Smoothie", "Green Detox", "Protein Bowl"]
+  }
+]
