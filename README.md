@@ -17,15 +17,7 @@ Build a hyper-personalized customer support agent that:
                                     │
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                         1. DATA MASKING LAYER                           │
-│   • Regex-based PII detection (phone, email, SSN)                       │
-│   • Replace with tokens: [PHONE_1], [EMAIL_1]                           │
-│   • Store mapping for response de-masking                               │
-└─────────────────────────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                      2. CONTEXT ENRICHMENT                              │
+│                      1. CONTEXT ENRICHMENT                              │
 │   • Fetch user profile from local DB (preferences, history)             │
 │   • Query nearby stores via location (mock/static data)                 │
 │   • Retrieve active promotions/coupons                                  │
@@ -33,7 +25,7 @@ Build a hyper-personalized customer support agent that:
                                     │
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                     3. RAG PIPELINE                                     │
+│                     2. RAG PIPELINE                                     │
 │   • Vector store (ChromaDB) with store info PDFs                        │
 │   • Embed query → Retrieve relevant chunks                              │
 │   • Inject into prompt context                                          │
@@ -41,9 +33,17 @@ Build a hyper-personalized customer support agent that:
                                     │
                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
+│                         3. PII MASKING                                  │
+│   • Regex-based PII detection (phone, email, SSN)                       │
+│   • Replace with tokens: [PHONE_1], [EMAIL_1]                           │
+│   • Store mapping for response de-masking                               │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
 │                      4. LLM ORCHESTRATION                               │
 │   • System prompt with persona + context                                │
-│   • User message (masked) + enriched context                            │
+│   • User message (masked) + enriched context (masked)                   │
 │   • Generate personalized response                                      │
 └─────────────────────────────────────────────────────────────────────────┘
                                     │
