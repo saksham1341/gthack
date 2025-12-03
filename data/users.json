@@ -2,33 +2,23 @@
   {
     "user_id": "u_001",
     "name": "John",
+    "username": "john",
+    "password": "john123",
     "phone": "555-123-4567",
     "email": "john@email.com",
-    "preferences": {
-      "favorite_drinks": ["hot cocoa", "latte"],
-      "dietary": ["vegan"],
-      "preferred_temperature": "hot"
-    },
-    "purchase_history": [
-      {"item": "Caramel Latte", "store_id": "s_001", "date": "2024-11-20"},
-      {"item": "Hot Cocoa", "store_id": "s_002", "date": "2024-11-15"}
-    ],
-    "loyalty_points": 150
+    "preferences": {},
+    "purchase_history": [],
+    "loyalty_points": 0
   },
   {
     "user_id": "u_002",
     "name": "Sarah",
+    "username": "sarah",
+    "password": "sarah123",
     "phone": "555-987-6543",
     "email": "sarah@email.com",
-    "preferences": {
-      "favorite_drinks": ["iced coffee", "smoothie"],
-      "dietary": [],
-      "preferred_temperature": "cold"
-    },
-    "purchase_history": [
-      {"item": "Iced Americano", "store_id": "s_001", "date": "2024-11-22"},
-      {"item": "Berry Smoothie", "store_id": "s_003", "date": "2024-11-18"}
-    ],
-    "loyalty_points": 80
+    "preferences": {},
+    "purchase_history": [],
+    "loyalty_points": 0
   }
 ]
